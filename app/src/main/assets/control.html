@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Control audio test</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,sans-serif;color:#203047;background:#f3f8fc}
+    body{margin:0;padding:26px 18px}main{max-width:600px;margin:auto}
+    .card{background:white;border:1px solid #d8e5eb;border-radius:18px;padding:23px;box-shadow:0 5px 20px #152c4010}
+    h1{font-size:24px;margin:0 0 10px}p{line-height:1.55;color:#506275}
+    audio{display:block;width:100%;margin:24px 0 10px}
+    .tag{display:inline-block;font-size:12px;padding:5px 10px;border-radius:40px;background:#ddf6ed;color:#126d53;font-weight:700}
+    .info{background:#edf3f7;border-radius:10px;padding:13px;margin-top:16px}
+    strong{color:#172837}
+  </style>
+</head>
+<body>
+<main class="card">
+  <span class="tag">LOCAL AUDIO — NO INTERNET NEEDED</span>
+  <h1>Control audio test</h1>
+  <p>This short musical tone is bundled inside the APK and loops. It tests whether <strong>Android WebView</strong> itself can keep audio playing when this application goes into the background.</p>
+  <audio src="control-tone.wav" controls loop preload="auto"></audio>
+  <div class="info">
+    <strong>How to test</strong>
+    <p>1. Tap the Play button above.<br>2. Tap <em>Send to background</em> in the app footer.<br>3. Listen while using another app.<br>4. Return and tap <em>Log result</em>.<br>5. Repeat with the phone's screen locked.</p>
+  </div>
+  <p>If this sample continues but YouTube Music stops, the issue is probably specific to YouTube Music, sign-in, or its playback behavior rather than a universal WebView limitation.</p>
+</main>
+</body>
+</html>
